@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liyouling.patient_track.dao.PatientsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.liyouling.patient_track.dao.po.Patients">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="gender" property="gender" />
+        <result column="height" property="height" />
+        <result column="birth_date" property="birthDate" />
+        <result column="age" property="age" />
+        <result column="weight" property="weight" />
+        <result column="native_place" property="nativePlace" />
+        <result column="residence_place" property="residencePlace" />
+        <result column="occupation" property="occupation" />
+        <result column="is_valid" property="isValid" />
+        <result column="create_date" property="createDate" />
+        <result column="update_date" property="updateDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, username, gender, height, birth_date, age, weight, native_place, residence_place, occupation, is_valid, create_date, update_date
+    </sql>
+
+</mapper>

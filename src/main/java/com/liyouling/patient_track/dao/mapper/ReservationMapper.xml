@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liyouling.patient_track.dao.ReservationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.liyouling.patient_track.dao.po.Reservation">
+        <id column="id" property="id" />
+        <result column="patient_id" property="patientId" />
+        <result column="doctor_id" property="doctorId" />
+        <result column="reservation_amonut" property="reservationAmonut" />
+        <result column="reservation_time" property="reservationTime" />
+        <result column="phone" property="phone" />
+        <result column="is_verify" property="isVerify" />
+        <result column="verify_review" property="verifyReview" />
+        <result column="is_pay" property="isPay" />
+        <result column="is_valid" property="isValid" />
+        <result column="create_date" property="createDate" />
+        <result column="update_date" property="updateDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, patient_id, doctor_id, reservation_amonut, reservation_time, phone, is_verify, verify_review, is_pay, is_valid, create_date, update_date
+    </sql>
+
+</mapper>
